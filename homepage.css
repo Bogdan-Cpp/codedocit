@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    text-decoration: none;
+}
+
+.listaHeader{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.sitelogo, li{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.suportus{
+    border: none;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(53,123,235);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*1230px*/
+@media (max-width: 1230px){
+    header{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+/*1000px*/
+@media (max-width: 1000px){
+    header{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/*570px*/
+@media (max-width: 570px){
+    header{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    ul{
+       font-size: 0.7rem;
+       gap: 0.5rem;
+    }
+
+    .sitelogo{
+        font-size: 1rem;
+    }
+}
+
+
+
+/*start*/
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.startBackground{
+    width: 1920px;
+    height: 680px;
+    background-color: lab(12.25% 0 0);
+}
+
+.slogan1{
+    display: flex;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+}
+
+.break{
+    display: block;
+    margin-top: -10px;
+}
+
+.continutStart{
+    display: flex;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+.paragrafStart{
+    line-height: 1.8;
+    color: rgb(130, 130, 130);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 300px;
+    margin-top: 0px;
+}
+
+.br1, .br2, .br3, .br4{
+    display: block;
+    margin-top: -10px
+}
+
+.explore{
+    margin-left: 300px;
+    margin-top: 20px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(53,123,235);
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
