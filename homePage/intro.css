@@ -1,33 +1,38 @@
 body{
+    background-color: lab(12.25% 0 0);
     margin: 0px;
     overflow-x: hidden;
 }
 
 .startBackground{
     width: 100%;
-    height: 1000px;
-    background-color: lab(12.25% 0 0);
+    height: 930px;
     background-image: url(http://www.transparenttextures.com/patterns/axiom-pattern.png);
 }
 
-.text{
-    display: flex;
+.text1{
+    margin-top: 20px;
+    margin-bottom: 0px;
     line-height: 1.2;
     color: rgb(255, 255, 255);
     font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
     font-size: 6rem;
 }
 
-.break{
-    display: block;
-    margin-left: 130px;
-    margin-top: -10px;
+.text2{
+    margin-top: 0px;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 6rem;
 }
 
 .continutStart{
     display: flex;
-    margin-top: 100px;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
 
 .paragrafStart{
@@ -35,8 +40,6 @@ body{
     color: rgb(163, 163, 163);
     font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
     font-size: 1.6rem;
-    margin-left: 155px;
-    margin-top: 0px;
 }
 
 .br1, .br2, .br3, .br4{
@@ -45,8 +48,7 @@ body{
 }
 
 .start_exploreButton{
-    margin-left: 370px;
-    margin-top: 20px;
+    margin-top: 50px;
     border: none;
     width: 200px;
     height: 50px;
@@ -68,9 +70,65 @@ body{
 .transparent_effect{
     width: 100%;
     height: 100px;
-    margin-top: 135px;
+    margin-top: 50px;
     background-color: lab(12.25% 0 0);
   
     mask-image: linear-gradient(to bottom, transparent, black 70%);
     -webkit-mask-image: linear-gradient(to bottom, transparent, black 80%);
+}
+
+@media (max-width: 1024px) {
+    .text1, .text2{
+        font-size: 4rem;
+    }
+
+    .paragrafStart{
+        font-size: 1.2rem;
+    }
+
+    .startBackground{
+        height: 780px;
+    }
+}
+
+@media (max-width: 800px) {
+    .text1, .text2{
+        font-size: 3rem;
+    }
+
+    .paragrafStart{
+        font-size: 0.9rem;
+    }
+
+    .startBackground{
+        height: 700px;
+    }
+}
+
+@media (max-width: 500px){
+    .text1, .text2{
+        font-size: 2rem;
+    }
+
+    .paragrafStart{
+        font-size: 0.7rem;
+    }
+
+    .startBackground{
+        height: 600px;
+    }
+}
+
+@media (max-width: 350px){
+    .text1, .text2{
+        font-size: 1.3rem;
+    }
+
+    .paragrafStart{
+        font-size: 0.6rem;
+    }
+
+    .startBackground{
+        height: 500px;
+    }
 }

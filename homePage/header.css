@@ -21,8 +21,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .sitelogo, li{
@@ -39,4 +39,40 @@ header{
     background-color: #45a049;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .sitelogo, li{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px){
+    .suportus{
+        width: 80px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    header{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .sitelogo, li{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 350px){
+    .suportus{
+        width: 60px;
+        height: 15px;
+        font-size: 0.6rem;
+    }
+    header{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .sitelogo, li{
+        font-size: 0.6rem;
+    }
 }
