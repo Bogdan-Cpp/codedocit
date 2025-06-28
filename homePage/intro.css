@@ -62,7 +62,7 @@ body{
     height: 50px;
     text-align: center;
     color: rgb(255, 255, 255);
-    background-color: #45a049;
+    background-color: #3CB371;
     border-radius: 5px;
     font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
     cursor: pointer;
@@ -72,7 +72,7 @@ body{
 }
 .start_exploreButton:hover {
     transform: scale(1.2);
-    background-color: #45a049;
+    background-color: #3CB371;
 }
 
 .transparent_effect{

@@ -1,0 +1,215 @@
+.random_projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 1000px;
+    background-color: lab(99.65% 0.01 -0.01);
+}
+
+.box_selection2{
+    margin-top: 200px;
+    display: flex;
+    color: lab(12.25% 0 0);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 3rem;
+}
+
+.random_projects_p {
+    margin-top: 20px;
+    color: rgb(79, 79, 79);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    width: 600px;
+}
+
+.random_project_area{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    border-radius: 15px;
+    padding: 10px;
+    gap: 1rem;
+    grid-template-areas: 
+        "box1 box1 box2 box3"
+        "box4 box5 box5 box3";
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+    background-color: lab(12.25% 0 0);
+    border-radius: 15px;
+}
+
+/*box1*/
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 20px;
+    color: white;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.box1_description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 250px;
+}
+.box1_level {
+    width: 100px;
+    height: 20px;
+    background-color: seagreen;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*box2*/
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 20px;
+    color: white;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.box2_description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 180px;
+}
+.box2_level {
+    width: 100px;
+    height: 20px;
+    background-color: seagreen;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*box3*/
+.box3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 20px;
+    color: white;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.box3_description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 180px;
+}
+.box3_level {
+    width: 120px;
+    height: 20px;
+    background-color: seagreen;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*box4*/
+.box4 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 20px;
+    color: white;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.box4_description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 180px;
+}
+.box4_level {
+    width: 110px;
+    height: 20px;
+    background-color: #9370DB;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*box5*/
+.box5 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 20px;
+    color: white;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.box5_description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 180px;
+}
+.box5_level {
+    width: 110px;
+    height: 20px;
+    background-color: #CD5C5C;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+@media (max-width: 890px) {
+    .random_project_area {
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+
+        grid-template-areas: 
+            "box1 box1 box2"
+            "box3 box4 box2"
+            "box3 box5 box2";
+    }
+}
+
+@media (max-width: 650px) {
+    .box_selection2 {
+        font-size: 2rem;
+    }
+
+    .random_projects_p {
+        font-size: 1.3rem;
+        width: 500px;
+    }
+
+    .random_project_area {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+
+        grid-template-areas: 
+            "box1 box2"
+            "box3 box4"
+            "box5 box5";
+    }
+}
+
+@media (max-width: 450px) {
+    .box_selection2 {
+        font-size: 1.3rem;
+        margin-top: 0px;
+    }
+
+    .random_projects_p {
+        font-size: 0.9rem;
+        width: 350px;
+    }
+
+    .random_project_area {
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 150px 150px 150px 150px;
+
+        grid-template-areas: 
+            "box1 box2"
+            "box3 box2"
+            "box3 box4"
+            "box5 box5";
+    }
+}
